@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="page-header" style="margin-top:40px">
+                <h2>Form Validation</h2>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+
+                    <form action="admin.php" id="frm1" onsubmit="return validation()">
+
+                        <br>
+
+                        <input type="text" name="username" autocomplete="off" placeholder="Username" class="form-control"><br>
+
+                        <input type="text" name="email" autocomplete="off" placeholder="Email" class="form-control"><br>
+
+                        <input type="password" name="password" autocomplete="off" placeholder="Password" class="form-control"><br>
+
+                        <input type="text" name="phone" autocomplete="off" placeholder="PhoneNumber" class="form-control"><br>
+
+                        <input type="submit" class="btn btn-primary" value="Register">
+
+                    </form>
+                    <br>
+
+                    <div class="alert alert-danger" style="opacity:0;transition:0.5s;" role="alert">
+                        <strong>Error! </strong>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
